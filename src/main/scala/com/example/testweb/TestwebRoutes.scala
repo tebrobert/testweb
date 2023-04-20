@@ -17,6 +17,7 @@ object TestwebRoutes {
           joke <- J.get
           resp <- Ok(joke)
         } yield resp
+      case e => Ok(e.uri.toString)
     }
   }
 
