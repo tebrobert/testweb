@@ -9,4 +9,6 @@ WORKDIR /Testweb
 
 COPY . /Testweb
 
+EXPOSE 8200
+
 CMD /ops/sbt/bin/sbt run
