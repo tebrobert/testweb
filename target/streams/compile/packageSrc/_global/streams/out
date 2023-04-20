@@ -1,0 +1,15 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/19126494/IdeaProjects/testweb/target/scala-2.13/testweb_2.13-0.0.1-SNAPSHOT-sources.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	logback.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/19126494/IdeaProjects/testweb/src/main/resources/logback.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	META-INF/native-image/com/example/testweb/reflect-config.json[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/19126494/IdeaProjects/testweb/src/main/resources/META-INF/native-image/com/example/testweb/reflect-config.json[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/example/testweb/TestwebServer.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/19126494/IdeaProjects/testweb/src/main/scala/com/example/testweb/TestwebServer.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/example/testweb/Jokes.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/19126494/IdeaProjects/testweb/src/main/scala/com/example/testweb/Jokes.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/example/testweb/Main.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/19126494/IdeaProjects/testweb/src/main/scala/com/example/testweb/Main.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/example/testweb/TestwebRoutes.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/19126494/IdeaProjects/testweb/src/main/scala/com/example/testweb/TestwebRoutes.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
