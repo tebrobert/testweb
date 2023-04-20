@@ -8,7 +8,7 @@ lazy val root = (project in file("."))
   .settings(
     organization := "com.example",
     name := "testweb",
-    version := "0.0.1-SNAPSHOT",
+    version := "v4",
     scalaVersion := "2.13.10",
     libraryDependencies ++= Seq(
       "org.http4s"      %% "http4s-ember-server" % Http4sVersion,
