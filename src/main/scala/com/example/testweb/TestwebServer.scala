@@ -1,6 +1,7 @@
 package com.example.testweb
 
 import cats.effect.Async
+import cats.effect.std.Console
 import com.comcast.ip4s._
 import org.http4s.ember.client.EmberClientBuilder
 import org.http4s.ember.server.EmberServerBuilder
@@ -9,7 +10,7 @@ import org.http4s.server.middleware.Logger
 
 object TestwebServer {
 
-  def run[F[_]: Async]: F[Nothing] = {
+  def run[F[_]: Async: Console]: F[Nothing] = {
     for {
       client <- EmberClientBuilder.default[F].build
       jokeAlg = Jokes.impl[F](client)
