@@ -7,6 +7,7 @@ import org.http4s.HttpRoutes
 import org.http4s.dsl.Http4sDsl
 
 import java.nio.charset.StandardCharsets
+import scala.sys.process.Process
 
 object TestwebRoutes {
 
@@ -19,6 +20,7 @@ object TestwebRoutes {
           reqBody <- req.body.compile.fold(Array.empty[Byte])(_ appended _)
             .map(new String(_, StandardCharsets.UTF_8))
           _ <- Console[F].println(reqBody)
+          _ <- Sync[F].delay(Process("curl 0.0.0.0:5432").run())
           joke <- J.get
           resp <- Ok(joke)
         } yield resp
