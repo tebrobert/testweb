@@ -28,6 +28,7 @@ object TestwebRoutes {
           )
 
           x <- sql"select * from test".query[Int].option.transact(xa).map(_.toString)
+            .handleError(_.toString)
           _ <- Console[F].println(x)
           resp <- Ok(x)
         } yield resp
