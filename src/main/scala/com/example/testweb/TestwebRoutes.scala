@@ -24,7 +24,7 @@ object TestwebRoutes {
           _ <- Console[F].println(reqBody)
 
           xa = Transactor.fromDriverManager[F](
-            "org.postgresql.Driver", "jdbc:postgresql:postgres", "postgres", "Stt-6789"
+            "org.postgresql.Driver", "jdbc:postgresql://0.0.0.0:5432/postgres", "postgres", "Stt-6789"
           )
 
           x <- sql"select * from test".query[Int].option.transact(xa).map(_.toString)
